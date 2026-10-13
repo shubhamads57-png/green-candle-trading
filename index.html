@@ -1,216 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>TENNIS JASOOS</title>
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2049022265664397');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2049022265664397&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-<style>
-  :root {
-    --white: #ffffff;
-    --accent: #ffd700;
-    --btn-bg: #0b1b4a;
-    --btn-border: #ffffff;
-  }
-
-  html,body{
-    height:100%;
-    margin:0;
-    padding:0;
-    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
-  }
-  body{
-    background: url('https://raw.githubusercontent.com/prediction1134/Dev/37b42401ff89058007e61a20b19679bad981b600/devv.jpeg') center/cover no-repeat fixed;
-    position:relative;
-    color:var(--white);
-    -webkit-font-smoothing:antialiased;
-  }
-
-  .bg-overlay{
-    position:fixed; inset:0;
-    background: rgba(0,0,0,0.55);
-    backdrop-filter: blur(4px);
-    z-index:0;
-  }
-
-  .wrap{
-    position:relative;
-    z-index:2;
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:28px;
-    box-sizing:border-box;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 520px;
-    text-align:center;
-    padding: 18px 20px;
-    color: #fff;
-  }
-
-  .title {
-    font-size: 36px;
-    font-weight: 800;
-    margin: 6px 0;
-    text-shadow: 0 6px 18px rgba(0,0,0,0.6);
-  }
-
-  .subtitle {
-    font-size: 16px;
-    color: rgba(255,255,255,0.9);
-    margin-bottom:18px;
-  }
-
-  /* circular profile */
-  .profile {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 18px auto 12px;
-    border: 4px solid rgba(255,255,255,0.2);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    background: center/cover no-repeat;
-  }
-
-  .joining-line {
-    margin-top: 10px;
-    color: rgba(255,255,255,0.85);
-    font-size: 16px;
-  }
-  .count {
-    font-size: 52px;
-    font-weight: 800;
-    color: var(--accent);
-    margin-top: 6px;
-    text-shadow: 0 6px 20px rgba(0,0,0,0.6);
-  }
-
-  .userline {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-  }
-
-  .request {
-    margin-top: 8px;
-    color: rgba(255,255,255,0.85);
-    font-size: 14px;
-  }
-
-  /* animated button */
-  .btn-join {
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    margin: 24px auto 10px;
-    background: var(--btn-bg);
-    color: var(--white);
-    padding: 16px 28px;
-    border-radius: 44px;
-    font-size: 20px;
-    font-weight: 800;
-    text-decoration: none;
-    border: 3px solid var(--btn-border);
-    box-shadow: 0 10px 30px rgba(3,10,40,0.6);
-    animation: popup 2s infinite ease-in-out, pulseColor 3s infinite alternate;
-  }
-
-  @keyframes popup {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-  }
-
-  @keyframes pulseColor {
-    0% { background-color: #0b1b4a; }
-    50% { background-color: #152b7b; }
-    100% { background-color: #0b1b4a; }
-  }
-
-  .btn-join:hover {
-    transform: scale(1.1);
-    box-shadow: 0 14px 40px rgba(3,10,40,0.9);
-  }
-
-  .footer-credit {
-    margin-top: 18px;
-    color: rgba(255,215,0,0.95);
-    font-weight:700;
-    font-size: 14px;
-  }
-  .footer-credit a { color: rgba(255,215,0,0.95); text-decoration:none; }
-
-  @media (max-width:480px){
-    .title { font-size: 28px; }
-    .profile { width:110px; height:110px; }
-    .count { font-size:42px; }
-    .btn-join { font-size:18px; padding:14px 22px; border-radius:36px; }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Candle Trading - Master the Markets & Grow Your Wealth</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta+Sans', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+        }
+        .glow {
+            box-shadow: 0 0 50px -10px rgba(16, 185, 129, 0.2);
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased selection:bg-emerald-500 selection:text-white">
 
-<div class="bg-overlay"></div>
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0b0f19]/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="bg-emerald-500 text-gray-950 p-2.5 rounded-xl font-extrabold text-xl flex items-center justify-center">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <span class="text-xl sm:text-2xl font-bold tracking-tight text-white">Green Candle <span class="text-emerald-400">Trading</span></span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#features" class="hover:text-emerald-400 transition">Features</a>
+                <a href="#markets" class="hover:text-emerald-400 transition">Markets</a>
+                <a href="#pricing" class="hover:text-emerald-400 transition">Pricing</a>
+                <a href="#signup" class="hover:text-emerald-400 transition">Join Us</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-emerald-500/20 flex items-center space-x-2">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span>Join Telegram</span>
+                </a>
+            </div>
+        </div>
+    </header>
 
-<div class="wrap">
-  <div class="card">
-    <div class="title">TENNIS JASOOS</div>
-    <div class="subtitle">India's No.1 Cricket Tipper</div>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden relative">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center space-x-2 bg-gray-900 border border-gray-800 px-4 py-2 rounded-full text-xs font-semibold text-emerald-400 mb-6">
+                    <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>Next-Gen Advanced Trading Platform</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Trade Smarter, Faster & <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">Profit More</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-400 mb-10 leading-relaxed">
+                    Access global markets, real-time analytics, lightning-fast execution, and institutional-grade tools built for every trader.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold text-base px-8 py-4 rounded-xl transition shadow-xl shadow-emerald-500/20 flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-telegram text-xl"></i>
+                        <span>Join Telegram Channel</span>
+                    </a>
+                    <a href="#features" class="w-full sm:w-auto bg-gray-900 hover:bg-gray-800 border border-gray-800 text-white font-semibold text-base px-8 py-4 rounded-xl transition flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-play text-emerald-400"></i>
+                        <span>Explore Features</span>
+                    </a>
+                </div>
+            </div>
 
-    <div id="profile" class="profile" style="background-image: url('https://raw.githubusercontent.com/prediction1134/Dev/37b42401ff89058007e61a20b19679bad981b600/devv.jpeg');"></div>
+            <!-- Hero Graphic / Mockup -->
+            <div class="mt-16 relative max-w-5xl mx-auto rounded-2xl border border-gray-800 bg-gray-950 p-4 glow">
+                <div class="flex items-center justify-between pb-4 border-b border-gray-800/80 mb-4 px-2">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="text-xs text-gray-400 font-mono">BTC/USDT - Live Chart Analytics</div>
+                    <div class="text-xs text-emerald-400 font-bold bg-emerald-500/10 px-2.5 py-1 rounded">LIVE +4.82%</div>
+                </div>
+                <div class="h-64 sm:h-96 bg-gray-900/50 rounded-xl flex flex-col items-center justify-center relative overflow-hidden border border-gray-800">
+                    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                    <i class="fa-solid fa-chart-candlestick text-6xl text-emerald-400 mb-4 animate-bounce"></i>
+                    <p class="text-gray-400 text-sm font-medium">Interactive Trading Chart Interface Loaded</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="joining-line">FREE JOINING ENDS IN...</div>
-    <div class="count" id="countNum">43</div>
+    <!-- Markets Ticker / Stats Bar -->
+    <div class="border-y border-gray-800 bg-gray-900/40 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 border-r border-gray-800 last:border-none">
+                <p class="text-gray-400 text-sm">24h Trading Volume</p>
+                <p class="text-2xl font-bold text-white mt-1">$48.5 Billion</p>
+            </div>
+            <div class="p-4 border-r border-gray-800 last:border-none">
+                <p class="text-gray-400 text-sm">Active Traders</p>
+                <p class="text-2xl font-bold text-emerald-400 mt-1">1.2M+</p>
+            </div>
+            <div class="p-4 border-r border-gray-800 last:border-none">
+                <p class="text-gray-400 text-sm">Execution Speed</p>
+                <p class="text-2xl font-bold text-white mt-1">&lt; 10ms</p>
+            </div>
+            <div class="p-4">
+                <p class="text-gray-400 text-sm">Global Markets</p>
+                <p class="text-2xl font-bold text-emerald-400 mt-1">150+</p>
+            </div>
+        </div>
+    </div>
 
-    <div class="userline">Dev</div>
-    <div class="request">Request access — approvals are quick ⬇</div>
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-[#0b0f19]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Why Choose Green Candle Trading?</h2>
+                <p class="text-gray-400">Everything you need to succeed in financial markets, designed for maximum efficiency and control.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-900/50 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
+                    <div class="w-14 h-14 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-gray-950 transition">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Lightning Fast Execution</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Execute trades in milliseconds without slippage using our ultra-low latency infrastructure.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-gray-900/50 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
+                    <div class="w-14 h-14 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-gray-950 transition">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Bank-Grade Security</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Your funds and data are safeguarded with multi-sig cold storage and advanced encryption protocols.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-gray-900/50 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
+                    <div class="w-14 h-14 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-gray-950 transition">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">AI-Driven Insights</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Get real-time market trends, automated pattern detection, and smart risk alerts right on your dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <a id="joinBtn" class="btn-join" href="https://t.me/+D_Y_jCerk0tlYTJl" target="_blank">
-      JOIN NOW FOR FREE CHANNEL
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <path d="M21 4L3 10.5L10 13.5L13 21L15 13.5L21 4Z" fill="#fff"/>
-      </svg>
-    </a>
+    <!-- Pricing / Account Types Section -->
+    <section id="pricing" class="py-24 bg-gray-900/20 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Flexible Accounts for Every Trader</h2>
+                <p class="text-gray-400">Choose the account tier that fits your trading volume and strategy.</p>
+            </div>
 
-    <div class="footer-credit"><a href="https://t.me/Shubhamads" target="_blank">Shubham Ads Agency</a></div>
-  </div>
-</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tier 1 -->
+                <div class="bg-gray-900/60 border border-gray-800 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Starter</h3>
+                        <p class="text-gray-400 text-sm mb-6">Perfect for beginners stepping into the markets.</p>
+                        <div class="text-4xl font-extrabold text-white mb-6">$0 <span class="text-sm font-normal text-gray-400">/ forever</span></div>
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Basic Chart Tools</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Standard Spreads</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> 24/7 Community Support</li>
+                        </ul>
+                    </div>
+                    <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl text-center transition">Get Started</a>
+                </div>
+                <!-- Tier 2 (Featured) -->
+                <div class="bg-gray-900 border-2 border-emerald-500 rounded-2xl p-8 flex flex-col justify-between relative shadow-xl shadow-emerald-500/10">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-500 text-gray-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Pro Trader</h3>
+                        <p class="text-gray-400 text-sm mb-6">Advanced features for active daily traders.</p>
+                        <div class="text-4xl font-extrabold text-white mb-6">$29 <span class="text-sm font-normal text-gray-400">/ month</span></div>
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Advanced Indicator Suite</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Zero Commission Trades</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Priority Order Execution</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> AI-Powered Market Alerts</li>
+                        </ul>
+                    </div>
+                    <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold py-3 rounded-xl text-center transition">Choose Pro</a>
+                </div>
+                <!-- Tier 3 -->
+                <div class="bg-gray-900/60 border border-gray-800 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">VIP Institutional</h3>
+                        <p class="text-gray-400 text-sm mb-6">For high-volume traders & funds.</p>
+                        <div class="text-4xl font-extrabold text-white mb-6">$99 <span class="text-sm font-normal text-gray-400">/ month</span></div>
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Dedicated Account Manager</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Custom API Access</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Lowest VIP Maker/Taker Fees</li>
+                        </ul>
+                    </div>
+                    <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl text-center transition">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script>
-  (function(){
-    let n = 43;
-    const el = document.getElementById('countNum');
-    setInterval(()=>{
-      n--;
-      if(n <= 0) n = 43;
-      el.textContent = n;
-    },1000);
-  })();
-</script>
+    <!-- Sign Up / Lead Capture Section -->
+    <section id="signup" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-emerald-500/5 pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 sm:p-12 text-center glow">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Ready to Join Our Trading Community?</h2>
+                <p class="text-gray-400 mb-8 max-w-xl mx-auto">Click below to join our Telegram channel directly and get instant daily trading updates and signals.</p>
+                
+                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="inline-flex items-center space-x-3 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold text-lg px-8 py-4 rounded-xl transition shadow-xl shadow-emerald-500/20">
+                    <i class="fa-brands fa-telegram text-2xl"></i>
+                    <span>Join Telegram Channel Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 bg-[#070910] py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between text-gray-400 text-sm">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <div class="bg-emerald-500 text-gray-950 p-2 rounded-lg font-bold text-sm flex items-center justify-center">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <span class="text-base font-bold text-white">Green Candle <span class="text-emerald-400">Trading</span></span>
+            </div>
+            <p>&copy; 2026 Green Candle Trading. All rights reserved. Trading involves risk.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0 text-xl">
+                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="hover:text-emerald-400 transition" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
-</html> 
+</html>
