@@ -61,8 +61,6 @@
             
             <!-- Logo Space -->
             <div class="flex items-center space-x-3">
-                <!-- Yahan agar image logo lagana ho toh niche wale <img> tag ko uncomment kar dein aur icon hata dein -->
-                <!-- <img src="your-logo.png" alt="Green Candle Trading Logo" class="w-10 h-10 object-contain rounded-xl"> -->
                 <div class="w-11 h-11 bg-gradient-to-tr from-emerald-600 to-emerald-400 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-500/20 text-gray-950 font-black text-xl">
                     <i class="fa-solid fa-arrow-trend-up"></i>
                 </div>
@@ -103,18 +101,17 @@
             </p>
 
             <!-- ========================================== -->
-            <!-- IMAGE / BANNER SPACE START -->
+            <!-- CIRCULAR IMAGE SPACE START -->
             <!-- ========================================== -->
-            <div class="mb-10 max-w-2xl mx-auto">
-                <div class="glass-card p-3 rounded-2xl border border-emerald-500/20 shadow-2xl relative overflow-hidden group">
-                    <div class="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none"></div>
-                    <!-- Yahan 'your-banner-image.jpg' ki jagah apni image ka link ya file name daalein -->
-                    <img src="your-banner-image.jpg" alt="Trading Community Preview" class="w-full h-64 sm:h-80 object-cover rounded-xl border border-gray-800" 
-                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80';">
+            <div class="mb-10 flex justify-center">
+                <div class="relative p-1.5 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-300 shadow-2xl shadow-emerald-500/20">
+                    <!-- Yahan 'your-image.jpg' ki jagah apni image ka link ya file name daalein -->
+                    <img src="your-image.jpg" alt="Trading Profile/Logo" class="w-36 h-36 sm:w-44 sm:h-44 object-cover rounded-full bg-gray-900 border-2 border-gray-950 block" 
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=400&q=80';">
                 </div>
             </div>
             <!-- ========================================== -->
-            <!-- IMAGE / BANNER SPACE END -->
+            <!-- CIRCULAR IMAGE SPACE END -->
             <!-- ========================================== -->
 
             <!-- Single Call To Action Button (Tracked with Subscribe Event) -->
@@ -133,7 +130,7 @@
             <div class="mt-14 glass-card rounded-2xl p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 shadow-xl">
                 <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
                     <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
-                        <i class="fa-solid fa-bolt-lightning text-lg">5+</i>
+                        <i class="fa-solid fa-bolt-lightning text-lg"></i>
                     </div>
                     <h3 class="text-white font-bold text-sm">Fast Signals</h3>
                     <p class="text-gray-400 text-xs mt-1">Real-time alerts right on your phone.</p>
@@ -176,7 +173,6 @@
     <!-- JavaScript for Meta Pixel Subscribe Event Tracking -->
     <script>
         function trackSubscribeEvent() {
-            // Yeh function Meta Pixel par 'Subscribe' event fire karega jab user Telegram button par click karega
             if (typeof fbq === 'function') {
                 fbq('track', 'Subscribe');
             }
