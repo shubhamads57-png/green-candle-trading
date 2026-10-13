@@ -11,96 +11,117 @@
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
         body {
             font-family: 'Plus Jakarta+Sans', sans-serif;
-            background-color: #0b0f19;
+            background-color: #070a12;
             color: #f3f4f6;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 10% 90%, rgba(5, 150, 105, 0.05) 0%, transparent 40%);
         }
-        .glow {
-            box-shadow: 0 0 50px -10px rgba(16, 185, 129, 0.2);
+        .glow-btn {
+            box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.4);
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
     </style>
 </head>
 <body class="antialiased selection:bg-emerald-500 selection:text-white min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="w-full bg-[#0b0f19]/80 backdrop-blur-md border-b border-gray-800">
+    <header class="w-full bg-[#070a12]/80 backdrop-blur-xl border-b border-gray-800/60 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <div class="bg-emerald-500 text-gray-950 p-2.5 rounded-xl font-extrabold text-xl flex items-center justify-center">
-                    <i class="fa-solid fa-chart-line"></i>
+            
+            <!-- Logo Space (Aap yahan <img> tag bhi use kar sakte hain logo ke liye) -->
+            <div class="flex items-center space-x-3">
+                <div class="w-11 h-11 bg-gradient-to-tr from-emerald-600 to-emerald-400 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-500/20 text-gray-950 font-black text-xl">
+                    <!-- Agar logo image lagani ho to <img> tag lagayein, abhi icon hai -->
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <!-- <img src="your-logo.png" alt="Logo" class="w-8 h-8 object-contain"> -->
                 </div>
-                <span class="text-xl sm:text-2xl font-bold tracking-tight text-white">Green Candle <span class="text-emerald-400">Trading</span></span>
+                <div>
+                    <span class="text-lg sm:text-xl font-bold tracking-tight text-white block leading-none">Green Candle</span>
+                    <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Trading Community</span>
+                </div>
             </div>
+
+            <!-- Top Right Action -->
             <div>
-                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-emerald-500/20 inline-flex items-center space-x-2">
-                    <i class="fa-brands fa-telegram text-lg"></i>
-                    <span>Join Telegram</span>
+                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-emerald-500/20 inline-flex items-center space-x-2 transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-telegram text-base"></i>
+                    <span class="hidden sm:inline">Join Telegram</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section with Single Action Button -->
-    <section class="flex-grow flex items-center justify-center py-16 md:py-24 overflow-hidden relative">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none"></div>
-        
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div class="inline-flex items-center space-x-2 bg-gray-900 border border-gray-800 px-4 py-2 rounded-full text-xs font-semibold text-emerald-400 mb-6">
+    <!-- Main Hero Section -->
+    <main class="flex-grow flex items-center justify-center py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl w-full text-center">
+            
+            <!-- Live Badge -->
+            <div class="inline-flex items-center space-x-2 glass-card px-4 py-2 rounded-full text-xs font-semibold text-emerald-400 mb-8 border border-emerald-500/20 shadow-inner">
                 <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
-                <span>Exclusive Trading Signals & Community</span>
+                <span>🔥 Premium Signals & Market Updates</span>
             </div>
             
-            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
-                Master the Markets with <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">Green Candles</span>
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
+                Trade Smarter. Catch Every <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500">Green Candle.</span>
             </h1>
             
-            <p class="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Get real-time market updates, expert technical analysis, and high-accuracy trading insights directly in our community.
+            <!-- Subtitle -->
+            <p class="text-base sm:text-lg text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed">
+                Join our elite community of traders to get high-accuracy setup alerts, professional chart breakdowns, and live market insights.
             </p>
 
-            <!-- Single Main CTA Button -->
-            <div class="flex justify-center">
-                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-extrabold text-lg px-10 py-5 rounded-2xl transition shadow-2xl shadow-emerald-500/30 inline-flex items-center justify-center space-x-3 transform hover:-translate-y-1">
+            <!-- Single Call To Action Button -->
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-extrabold text-lg sm:text-xl px-10 py-5 rounded-2xl transition glow-btn inline-flex items-center justify-center space-x-3 transform hover:-translate-y-1">
                     <i class="fa-brands fa-telegram text-3xl"></i>
-                    <span>Join Telegram Channel Now</span>
+                    <span>Join Telegram Channel Free</span>
                 </a>
+                <p class="text-xs text-gray-500 flex items-center space-x-1">
+                    <i class="fa-solid fa-shield-check text-emerald-400"></i>
+                    <span>Instant access • 100% Free community</span>
+                </p>
             </div>
 
-            <!-- Trust / Feature badges -->
-            <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10 border-t border-gray-800/80">
-                <div class="flex items-center justify-center space-x-3 text-gray-400 text-sm">
-                    <i class="fa-solid fa-check-circle text-emerald-400 text-lg"></i>
-                    <span>100% Free Access</span>
+            <!-- Highlights Box -->
+            <div class="mt-16 glass-card rounded-2xl p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 shadow-xl">
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-bolt-lightning text-lg"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-sm">Fast Signals</h3>
+                    <p class="text-gray-400 text-xs mt-1">Real-time alerts right on your phone.</p>
                 </div>
-                <div class="flex items-center justify-center space-x-3 text-gray-400 text-sm">
-                    <i class="fa-solid fa-bolt text-emerald-400 text-lg"></i>
-                    <span>Instant Signal Updates</span>
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-chart-pie text-lg"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-sm">Expert Analysis</h3>
+                    <p class="text-gray-400 text-xs mt-1">Deep market structure reviews.</p>
                 </div>
-                <div class="flex items-center justify-center space-x-3 text-gray-400 text-sm">
-                    <i class="fa-solid fa-users text-emerald-400 text-lg"></i>
-                    <span>Active Trader Community</span>
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-user-group text-lg"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-sm">Active Traders</h3>
+                    <p class="text-gray-400 text-xs mt-1">Learn & grow with serious traders.</p>
                 </div>
             </div>
+
         </div>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="border-t border-gray-800 bg-[#070910] py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-gray-400 text-sm text-center sm:text-left space-y-4 sm:space-y-0">
+    <footer class="border-t border-gray-800/60 bg-[#05070d] py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-gray-500 text-xs text-center sm:text-left space-y-4 sm:space-y-0">
             <div class="flex items-center space-x-2">
-                <div class="bg-emerald-500 text-gray-950 p-2 rounded-lg font-bold text-sm flex items-center justify-center">
-                    <i class="fa-solid fa-chart-line"></i>
-                </div>
-                <span class="text-base font-bold text-white">Green Candle <span class="text-emerald-400">Trading</span></span>
+                <span class="text-gray-300 font-semibold">Green Candle Trading</span>
             </div>
-            <p>&copy; 2026 Green Candle Trading. All rights reserved.</p>
+            <p>&copy; 2026 All rights reserved. Trading in financial markets involves high risk.</p>
             <div>
-                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="text-emerald-400 hover:underline inline-flex items-center space-x-1">
-                    <i class="fa-brands fa-telegram"></i>
-                    <span>Join Channel</span>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-medium inline
