@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Candle Trading - Master the Markets</title>
+
     <!-- Tailwind CSS for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ========================================== -->
+    <!-- META PIXEL CODE START -->
+    <!-- ========================================== -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=true;n.loaded=!true;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        // REPLACE 'YOUR_PIXEL_ID_HERE' WITH YOUR ACTUAL META PIXEL ID
+        fbq('init', 'YOUR_PIXEL_ID_HERE'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- ========================================== -->
+    <!-- META PIXEL CODE END -->
+    <!-- ========================================== -->
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
         body {
@@ -33,12 +59,12 @@
     <header class="w-full bg-[#070a12]/80 backdrop-blur-xl border-b border-gray-800/60 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
-            <!-- Logo Space (Aap yahan <img> tag bhi use kar sakte hain logo ke liye) -->
+            <!-- Logo Space -->
             <div class="flex items-center space-x-3">
+                <!-- Yahan agar image logo lagana ho toh niche wale <img> tag ko uncomment kar dein aur icon hata dein -->
+                <!-- <img src="your-logo.png" alt="Green Candle Trading Logo" class="w-10 h-10 object-contain rounded-xl"> -->
                 <div class="w-11 h-11 bg-gradient-to-tr from-emerald-600 to-emerald-400 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-500/20 text-gray-950 font-black text-xl">
-                    <!-- Agar logo image lagani ho to <img> tag lagayein, abhi icon hai -->
                     <i class="fa-solid fa-arrow-trend-up"></i>
-                    <!-- <img src="your-logo.png" alt="Logo" class="w-8 h-8 object-contain"> -->
                 </div>
                 <div>
                     <span class="text-lg sm:text-xl font-bold tracking-tight text-white block leading-none">Green Candle</span>
@@ -46,9 +72,9 @@
                 </div>
             </div>
 
-            <!-- Top Right Action -->
+            <!-- Top Right Action (Tracked with Subscribe Event) -->
             <div>
-                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-emerald-500/20 inline-flex items-center space-x-2 transform hover:-translate-y-0.5">
+                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" onclick="trackSubscribeEvent()" class="bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-emerald-500/20 inline-flex items-center space-x-2 transform hover:-translate-y-0.5">
                     <i class="fa-brands fa-telegram text-base"></i>
                     <span class="hidden sm:inline">Join Telegram</span>
                 </a>
@@ -57,11 +83,11 @@
     </header>
 
     <!-- Main Hero Section -->
-    <main class="flex-grow flex items-center justify-center py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl w-full text-center">
+    <main class="flex-grow flex items-center justify-center py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl w-full text-center">
             
             <!-- Live Badge -->
-            <div class="inline-flex items-center space-x-2 glass-card px-4 py-2 rounded-full text-xs font-semibold text-emerald-400 mb-8 border border-emerald-500/20 shadow-inner">
+            <div class="inline-flex items-center space-x-2 glass-card px-4 py-2 rounded-full text-xs font-semibold text-emerald-400 mb-6 border border-emerald-500/20 shadow-inner">
                 <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
                 <span>🔥 Premium Signals & Market Updates</span>
             </div>
@@ -72,13 +98,28 @@
             </h1>
             
             <!-- Subtitle -->
-            <p class="text-base sm:text-lg text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed">
+            <p class="text-base sm:text-lg text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
                 Join our elite community of traders to get high-accuracy setup alerts, professional chart breakdowns, and live market insights.
             </p>
 
-            <!-- Single Call To Action Button -->
+            <!-- ========================================== -->
+            <!-- IMAGE / BANNER SPACE START -->
+            <!-- ========================================== -->
+            <div class="mb-10 max-w-2xl mx-auto">
+                <div class="glass-card p-3 rounded-2xl border border-emerald-500/20 shadow-2xl relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none"></div>
+                    <!-- Yahan 'your-banner-image.jpg' ki jagah apni image ka link ya file name daalein -->
+                    <img src="your-banner-image.jpg" alt="Trading Community Preview" class="w-full h-64 sm:h-80 object-cover rounded-xl border border-gray-800" 
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80';">
+                </div>
+            </div>
+            <!-- ========================================== -->
+            <!-- IMAGE / BANNER SPACE END -->
+            <!-- ========================================== -->
+
+            <!-- Single Call To Action Button (Tracked with Subscribe Event) -->
             <div class="flex flex-col items-center justify-center space-y-4">
-                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-extrabold text-lg sm:text-xl px-10 py-5 rounded-2xl transition glow-btn inline-flex items-center justify-center space-x-3 transform hover:-translate-y-1">
+                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" onclick="trackSubscribeEvent()" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-extrabold text-lg sm:text-xl px-10 py-5 rounded-2xl transition glow-btn inline-flex items-center justify-center space-x-3 transform hover:-translate-y-1">
                     <i class="fa-brands fa-telegram text-3xl"></i>
                     <span>Join Telegram Channel Free</span>
                 </a>
@@ -89,10 +130,10 @@
             </div>
 
             <!-- Highlights Box -->
-            <div class="mt-16 glass-card rounded-2xl p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 shadow-xl">
+            <div class="mt-14 glass-card rounded-2xl p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 shadow-xl">
                 <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
                     <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
-                        <i class="fa-solid fa-bolt-lightning text-lg"></i>
+                        <i class="fa-solid fa-bolt-lightning text-lg">5+</i>
                     </div>
                     <h3 class="text-white font-bold text-sm">Fast Signals</h3>
                     <p class="text-gray-400 text-xs mt-1">Real-time alerts right on your phone.</p>
@@ -124,4 +165,23 @@
             </div>
             <p>&copy; 2026 All rights reserved. Trading in financial markets involves high risk.</p>
             <div>
-                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-medium inline
+                <a href="https://t.me/+i8RX61ve3Wo1MGNl" target="_blank" onclick="trackSubscribeEvent()" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center space-x-1">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span>Telegram Channel</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Meta Pixel Subscribe Event Tracking -->
+    <script>
+        function trackSubscribeEvent() {
+            // Yeh function Meta Pixel par 'Subscribe' event fire karega jab user Telegram button par click karega
+            if (typeof fbq === 'function') {
+                fbq('track', 'Subscribe');
+            }
+        }
+    </script>
+
+</body>
+</html>
